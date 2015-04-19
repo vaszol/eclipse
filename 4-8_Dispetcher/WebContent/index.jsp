@@ -10,7 +10,7 @@
 <body>
 <p>Пожалуйста представьтесь:</p>
 <%-- GET POST --%>
-<form action="page.jsp" method="post">
+<form action="StartServlet" method="post">
 	Login: <input type="text" name="login"/>
 	Password: <input type="text" name="pass"/>
 	<input type="submit" name="enter" value="Log in"/>

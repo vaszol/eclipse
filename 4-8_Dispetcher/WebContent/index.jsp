@@ -8,9 +8,13 @@
 <title>Введите заголовок</title>
 </head>
 <body>
-<p>количество обращений к странице в на сервере</p>
-<%! int mount=0; %>
-<% mount++; %>
-<%=mount %>
+<p>Пожалуйста представьтесь:</p>
+<%-- GET POST --%>
+<form action="page.jsp" method="get">
+	Login: <input type="text" name="login"/>
+	Password: <input type="text" name="pass"/>
+	<input type="submit" name="enter" value="Log in"/>
+	<input type="submit" name="register" value="register"/>
+</form>
 </body>
 </html>

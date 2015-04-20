@@ -5,21 +5,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Введите заголовок</title>
+<title>Использование сессий</title>
 </head>
 <body>
-<p>Пожалуйста представьтесь:</p>
+<%-- session --%>
+<p>Сохранение параметра сессиии:</p>
 <%-- GET POST --%>
-<form action="StartServlet" method="post">
-	Login: <input type="text" name="login"/>
-	Password: <input type="text" name="pass"/>
-	<input type="submit" name="enter" value="Log in"/>
-	<input type="submit" name="register" value="register"/>
+<form action="session.jsp" method="post">
+	Login: <input type="text" name="textInput"/>
+	<input type="submit" name="send" value="next"/>
 </form>
 
-<p>проверка сервлета</br>
-	<a href="myServletWeb">через web.xml</a></br>
-	<a href="MyServlet">через аннтотацию</a>
-</p>
 </body>
 </html>
